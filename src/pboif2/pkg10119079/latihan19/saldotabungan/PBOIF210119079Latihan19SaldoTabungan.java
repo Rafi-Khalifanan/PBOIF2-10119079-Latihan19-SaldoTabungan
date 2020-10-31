@@ -35,7 +35,7 @@ public class PBOIF210119079Latihan19SaldoTabungan {
         
         sbunga = bunga/100;
         for (int i = 1; i <= lama; i++){
-            saldoAkhir = (saldoAwal * 0.15) + saldoAwal;
+            saldoAkhir = (saldoAwal * sbunga) + saldoAwal;
             System.out.printf("Saldo di bulan ke- "+i+ "%s %n ",kursIndonesia.format(saldoAkhir));
             saldoAwal = saldoAkhir;
                     
